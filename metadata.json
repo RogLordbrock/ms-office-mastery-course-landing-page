@@ -1,0 +1,8 @@
+{
+  "name": "Office Mastery Landing Page",
+  "description": "A high-conversion landing page for Microsoft Office professional training courses in Algeria, featuring curriculum details, social proof, and seamless registration.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
