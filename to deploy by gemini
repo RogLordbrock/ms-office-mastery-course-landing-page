@@ -1,0 +1,39 @@
+name: Deploy to InfinityFree
+
+on:
+  push:
+    branches:
+      - main  # OR 'master' - check your default branch name!
+
+jobs:
+  web-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: 📦 Install Dependencies
+        run: npm install
+
+      - name: 🏗️ Build Project
+        run: npm run build
+        # This creates the 'dist' or 'build' folder
+
+      - name: 📂 Sync files to InfinityFree
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # The folder on InfinityFree to upload TO:
+          server-dir: /htdocs/
+          # The folder on GitHub to upload FROM (usually 'dist' or 'build'):
+          local-dir: ./dist/ 
+          # IMPORTANT: Check your package.json. If it says "vite", use "./dist/". 
+          # If it says "react-scripts", use "./build/".
