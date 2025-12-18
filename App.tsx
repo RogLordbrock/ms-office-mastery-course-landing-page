@@ -124,7 +124,7 @@ const App: React.FC = () => {
               <div className="text-right">
                 <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6" style={{ fontFamily: 'Cairo' }}>لماذا معهد دايلي سكول؟</h2>
                 <p className="text-slate-500 text-lg leading-relaxed font-medium" dir="rtl">
-                  نحن لا نقدم مجرد دورة، بل نصنع تجربة تعليمية تطبيقية تضمن لك النتائج منذ الساعة الأولى.
+                  نحن لا نقدم لك مجرد دورة، بل نصنع لك تجربة تعليمية تطبيقية حسب احتياجاتك الخاصة.
                 </p>
               </div>
 
@@ -142,12 +142,12 @@ const App: React.FC = () => {
                 <div className="bg-slate-50 p-8 rounded-3xl hover:bg-orange-50 transition-colors border border-transparent hover:border-orange-100">
                   <div className="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6"><Timer className="w-8 h-8" /></div>
                   <h3 className="font-bold text-xl mb-3 text-slate-900">برنامج مكثف</h3>
-                  <p className="text-slate-500 font-medium leading-relaxed">24 ساعة مقسمة بعناية لتغطي كل الأساسيات والاحتراف.</p>
+                  <p className="text-slate-500 font-medium leading-relaxed">24 ساعة مقسمة على كل ويكاند.</p>
                 </div>
                 <div className="bg-slate-50 p-8 rounded-3xl hover:bg-rose-50 transition-colors border border-transparent hover:border-rose-100">
                   <div className="w-14 h-14 bg-rose-100 text-rose-600 rounded-2xl flex items-center justify-center mb-6"><Landmark className="w-8 h-8" /></div>
                   <h3 className="font-bold text-xl mb-3 text-slate-900">خبرة عريقة</h3>
-                  <p className="text-slate-500 font-medium leading-relaxed">منذ سنة 2006 ونحن في خدمة المتكونين بأعلى المعايير.</p>
+                  <p className="text-slate-500 font-medium leading-relaxed">منذ سنة 2006 ونحن في مجال التكوينات الإحترافية.</p>
                 </div>
               </div>
 
@@ -235,7 +235,7 @@ const App: React.FC = () => {
                 <span className="text-yellow-400">7000+ متكون</span>
               </h2>
               <p className="text-xl text-blue-50 leading-relaxed font-medium opacity-90 max-w-xl">
-                نحن نفخر بأن نكون الخيار الأول للتدريب في المنطقة. خبرتنا الممتدة منذ 2006 تضمن لك تعليماً عالي الجودة ومواكباً لسوق العمل.
+                نحن نفخر بأن نكون الخيار الأول للتدريب والتكوين في المنطقة. خبرتنا الممتدة منذ 2006  تقدم لشهادتنا الأولوية في التوظيف عند المؤسسات.
               </p>
               <div className="pt-4 flex gap-6">
                 <div className="bg-white/10 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/20">
